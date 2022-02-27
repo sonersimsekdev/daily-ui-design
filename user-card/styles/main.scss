@@ -1,0 +1,143 @@
+@import "./reset";
+@import "./colors";
+@import "./fonts";
+
+
+$font16:16px;
+html,body {
+    height: 100%;
+}
+
+body {
+    background-color: $colorFour;
+    color: $colorOne;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: $fontPoppins;
+}
+
+.card {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: $colorFive;
+    width: 562px;
+    height:607px;
+    border-radius: 25px;
+    font-family: $fontPoppins;
+    z-index: 999;
+    position: relative;
+    
+
+    .rhead {
+        .rhead-h {
+                font-family: $fontMerriweather;
+                font-size: 26px;
+                margin-bottom: 8px;
+            }
+
+            .rhead-b {
+                font-size: $font16;
+            }
+    }
+   
+
+    .left-side{
+        display: flex;
+        width:200px;
+        align-self: flex-start;
+    }
+
+    .right-side {
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        //margin-top: 50px;
+        height: 510px;
+        width: 340px;
+        justify-content: space-evenly;
+    }
+    .rows {
+        
+        display: flex;
+        flex-direction: column;
+        .mini {
+            padding-top: 10px;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            .text {
+                font-size: $font16;
+                font-family: $fontPoppins;
+                margin-left: 5px;
+            }
+        }
+    }
+
+    .btn {
+        font-size: $font16;
+        border-radius: 4px;
+        padding: 10px;
+        background-color: $colorFive;
+        border: 2px solid $colorThree;
+        font-family: $fontPoppins;
+        color: $colorOne;
+    }
+
+    .btn:hover{
+        font-size: $font16;
+        border-radius: 4px;
+        padding: 10px;
+        background-color: $colorThree;
+        border: 2px solid $colorThree;
+        font-family: $fontPoppins;
+        color: $colorFive;
+        transition: .3s;
+    }
+
+    .paragh {
+        font-size: 16px;
+        margin-bottom: $font16;
+    }
+}
+
+img {
+    margin-left: 50px;
+    margin-top: 50px;
+    width: 114px;
+    border-radius: 50%;
+    border: 11px solid $colorTwo;
+}
+
+.overlay {
+    display: block;
+    width: 500px;
+    height: 20px;
+    position: relative;
+    background-color: $colorTwo;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
+
+
+.footer {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 20px;
+    color: $colorThree;
+    .link:visited,.link:active,.link:link  {
+        text-decoration: none;
+        color: $colorThree;
+    }
+    .link:hover {
+        color: $colorOne;
+      
+    }
+    
+}
+

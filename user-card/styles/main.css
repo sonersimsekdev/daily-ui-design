@@ -1,0 +1,191 @@
+*, *::after, *::before {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  text-decoration: none;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+@font-face {
+  font-family: Merriweather;
+  src: url(../fonts/Merriweather-Bold.ttf);
+}
+
+@font-face {
+  font-family: Poppins;
+  src: url(../fonts/Poppins-Medium.ttf);
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  background-color: #F3F8FE;
+  color: #1C2B62;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: Poppins;
+}
+
+.card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #FFFFFF;
+  width: 562px;
+  height: 607px;
+  border-radius: 25px;
+  font-family: Poppins;
+  z-index: 999;
+  position: relative;
+}
+
+.card .rhead .rhead-h {
+  font-family: Merriweather;
+  font-size: 26px;
+  margin-bottom: 8px;
+}
+
+.card .rhead .rhead-b {
+  font-size: 16px;
+}
+
+.card .left-side {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 200px;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+}
+
+.card .right-side {
+  padding: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 510px;
+  width: 340px;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.card .rows {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.card .rows .mini {
+  padding-top: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.card .rows .mini .text {
+  font-size: 16px;
+  font-family: Poppins;
+  margin-left: 5px;
+}
+
+.card .btn {
+  font-size: 16px;
+  border-radius: 4px;
+  padding: 10px;
+  background-color: #FFFFFF;
+  border: 2px solid #C4CADF;
+  font-family: Poppins;
+  color: #1C2B62;
+}
+
+.card .btn:hover {
+  font-size: 16px;
+  border-radius: 4px;
+  padding: 10px;
+  background-color: #C4CADF;
+  border: 2px solid #C4CADF;
+  font-family: Poppins;
+  color: #FFFFFF;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.card .paragh {
+  font-size: 16px;
+  margin-bottom: 16px;
+}
+
+img {
+  margin-left: 50px;
+  margin-top: 50px;
+  width: 114px;
+  border-radius: 50%;
+  border: 11px solid #E6EFFA;
+}
+
+.overlay {
+  display: block;
+  width: 500px;
+  height: 20px;
+  position: relative;
+  background-color: #E6EFFA;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+}
+
+.footer {
+  display: block;
+  position: absolute;
+  bottom: 0;
+  margin-bottom: 20px;
+  color: #C4CADF;
+}
+
+.footer .link:visited, .footer .link:active, .footer .link:link {
+  text-decoration: none;
+  color: #C4CADF;
+}
+
+.footer .link:hover {
+  color: #1C2B62;
+}
+/*# sourceMappingURL=main.css.map */
