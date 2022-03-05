@@ -1,0 +1,139 @@
+@import "./reset";
+@import "./colors";
+@import "./fonts";
+
+$font16:16px;
+
+html,body {
+    height: 100%;
+    
+}
+
+body {
+    background-color: $body;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: $fontPoppins;
+}
+
+.section-area {
+    border-radius: 16px;
+    background-color: $cardbg;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    max-width: 1213px;
+    max-height: 830px;
+    padding: 20px;
+    
+
+    .section-area-header {
+       padding-left: 65px;
+       padding-right: 65px;
+        margin-bottom: 5px;
+        width: inherit;
+        display:flex;
+        justify-content: flex-start;
+        flex-direction: column;
+        .section-modul-head {
+           
+            display: flex;
+            justify-content: flex-start;
+            margin-bottom: 5px;
+        }
+        .section-modul-body {
+           align-items: center;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+    }
+    .section-area-body {
+        width: inherit;
+        margin-top: 20px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    
+    .btn {
+        padding: 16px;
+        background-color: fff;
+        color:$btn-color;
+    }
+    .inputarea {
+        padding: 16px;
+        background-color: fff;
+        color:$btn-color;
+        border-radius: 6px;
+        border: 1px solid $btn-tags-border;
+        input {
+            font-family: $fontPoppins;
+            color: $btn-color;
+        }
+    }
+    .tags {
+        margin-top: 10px;
+        /*flex-wrap: wrap;
+        word-wrap: break-word;*/
+    }
+    .active-btn {
+        background-color: $active-btn-color;
+        color: $cardbg;
+        border-radius: 10px;
+    }
+    .head-text {
+        font-family: $fontMerriweather;
+    }
+
+    .active-card {
+        border: 1px solid rgba($color: $btn-color, $alpha: 0.5);
+        border-radius: 10px;
+        box-shadow: 1px 1px 20px  $btn-color;
+    }
+    .btn-tags {
+        margin-top: 5px;
+        border: 3px solid $btn-tags-border;
+        padding: 5px;
+        border-radius: 15px;
+        background-color: $cardbg;
+        color: $active-btn-color;
+    }
+    .card-section {
+        display: grid;
+        grid-template-columns: repeat(3,24rem);
+        grid-template-rows: repeat(2,208px);
+        gap: 10px;
+        
+        .card {
+            
+            display: flex;
+            justify-content:space-evenly;
+            flex-direction: row;
+            align-items: center;
+        }
+        .card-left-side {
+            //margin-top: -30px;
+            margin-left: 40px;
+            flex: 1 1 auto;
+            
+        }
+        .card-right-side {
+            width: 200px;
+            //margin-top: 20px;
+            h3,h4 {
+                color: $h3-h4-color;
+            }
+            a {
+                display: inline-flex;
+              
+            }
+        }
+        
+    }
+}

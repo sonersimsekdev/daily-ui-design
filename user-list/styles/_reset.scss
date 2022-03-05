@@ -1,0 +1,13 @@
+*,*::after,*::before {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    
+}
+
+a:visited,a:active,a:link,a:hover {
+    text-decoration: none;
+    color: black;
+}
